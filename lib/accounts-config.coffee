@@ -24,6 +24,13 @@ AccountsTemplates.configureRoute 'signUp',
     layoutTemplate: 'layout',
     redirect: '/dashboard'
 
+AccountsTemplates.configureRoute 'forgotPwd',
+    name: 'forgotpassword',
+    path: '/forgot-password',
+    template: 'forgotpassword',
+    layoutTemplate: 'layout',
+    redirect: '/'
+
 AccountsTemplates.configure
   confirmPassword: true
   enablePasswordChange: true

@@ -9,3 +9,10 @@ template(name='signup')
     h1.title Memri
 
   +atForm
+
+template(name='forgotpassword')
+  +contentFor("headerTitle")
+    h1.title Memri
+  +atForm
+  .text-center
+    a(href='{{pathFor "signin"}}') Cancel
