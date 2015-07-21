@@ -1,0 +1,16 @@
+template(name='dashboard')
+  +contentFor("headerTitle")
+    h1.title Memri
+
+  +contentFor("headerButtonRight")
+    button.button.button-clear#logout
+      | Logout
+
+  +ionList
+    +ionItem(path='hello' buttonRight=true class="item-icon-right")
+      p Hello
+      +ionIcon(icon='ios-arrow-forward' class="arrow-forward")
+    +ionItem(path='hello' buttonRight=true class="item-icon-right")
+      p Hello
+      +ionIcon(icon='ios-arrow-forward' class="arrow-forward")
+

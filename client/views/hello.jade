@@ -1,0 +1,8 @@
+template(name='hello')
+  +contentFor("headerTitle")
+    h1.title Hello
+
+  +contentFor("headerButtonLeft")
+    +ionNavBackButton(path="dashboard" text="Back")
+
+  p This is the hello page
