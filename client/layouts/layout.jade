@@ -1,7 +1,20 @@
 template(name='layout')
   +ionBody
-    +ionNavBar
-    +ionNavView
-      +ionView
-        +ionContent
-          +yield
+    +ionSideMenuContainer
+      +ionSideMenus
+        +ionSideMenu
+          +leftMenu
+        +ionSideMenu(side="right")
+          +rightMenu
+      +ionSideMenuContent
+        +ionNavBar
+        +ionNavView
+          +ionView
+            +ionContent
+              +yield
+
+template(name='layoutLoggedOut')
+  +ionBody
+    +nav
+    +ionContent
+      +yield

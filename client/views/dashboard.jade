@@ -1,4 +1,6 @@
 template(name='dashboard')
+  +sideMenu
+
   +contentFor("headerTitle")
     h1.title Memri
 
@@ -14,3 +16,10 @@ template(name='dashboard')
       p Hello
       +ionIcon(icon='ios-arrow-forward' class="arrow-forward")
 
+template(name='sideMenu')
+  +contentFor("headerButtonLeft")
+    button.button.button-clear.pull-left(data-ion-menu-toggle='left')
+      if isAndroid
+        +ionIcon(icon='android-more-vertical')
+      else
+        +ionIcon(icon='navicon')

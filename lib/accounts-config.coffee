@@ -1,6 +1,6 @@
 AccountsTemplates.configureRoute 'changePwd'
 AccountsTemplates.configureRoute 'enrollAccount'
-AccountsTemplates.configureRoute 'forgotPwd'
+# AccountsTemplates.configureRoute 'forgotPwd'
 AccountsTemplates.configureRoute 'resetPwd'
 # AccountsTemplates.configureRoute 'signIn'
 # AccountsTemplates.configureRoute 'signUp'
@@ -8,27 +8,27 @@ AccountsTemplates.configureRoute 'verifyEmail'
 
 AccountsTemplates.configureRoute 'ensureSignedIn',
     template: 'login',
-    layoutTemplate: 'layout'
+    layoutTemplate: 'layoutLoggedOut'
 
 AccountsTemplates.configureRoute 'signIn',
     name: 'signin',
     path: '/',
     template: 'login',
-    layoutTemplate: 'layout',
+    layoutTemplate: 'layoutLoggedOut',
     redirect: '/dashboard'
 
 AccountsTemplates.configureRoute 'signUp',
     name: 'signup',
     path: '/signup',
     template: 'signup',
-    layoutTemplate: 'layout',
+    layoutTemplate: 'layoutLoggedOut',
     redirect: '/dashboard'
 
 AccountsTemplates.configureRoute 'forgotPwd',
     name: 'forgotpassword',
     path: '/forgot-password',
     template: 'forgotpassword',
-    layoutTemplate: 'layout',
+    layoutTemplate: 'layoutLoggedOut',
     redirect: '/'
 
 AccountsTemplates.configure
